@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class output extends StatefulWidget {
   output({super.key});
   // ignore: non_constant_identifier_names
-  String fname = "";
+
   f_name(String name) {
-    fname = name;
+    String fname = name;
     print(fname);
   }
 
@@ -58,7 +58,7 @@ class _homepageState extends State<homepage> {
               // ignore: unnecessary_this
               child: Center(
                 child: Text(
-                  ("${o.fname}"),
+                  ("${output()}"),
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
